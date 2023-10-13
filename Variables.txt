@@ -1,0 +1,78 @@
+Q1.D/w Variable and properties
+
+In C#, variables and properties are both used to store and manage data, but they have distinct characteristics and serve different purposes:
+
+Variables:
+
+Variables are used to store data values in memory. They represent a named storage location where you can store and retrieve values of a specific data type.
+They are typically used for storing temporary or local data within methods or blocks of code.
+Variables can be of value types (e.g., int, double, char) or reference types (e.g., classes, structs).
+You can directly access and modify the value of a variable within the scope in which it is defined.
+Variables are typically declared with a data type, a name, and optionally, an initial value.
+
+int age = 30; // Declaration and initialization of a variable
+
+
+Properties:
+
+Properties are used to encapsulate the state of an object by providing controlled access to its internal data or fields.
+They are part of a class or struct and are used to expose private fields or provide additional logic (e.g., validation) when getting or setting a value.
+Properties define get and set accessors that allow you to read and write the underlying data, often with additional logic for validation or computation.
+Properties are commonly used for implementing object-oriented concepts like encapsulation and data hiding.
+Properties are typically declared within classes or structs and accessed using object instances.
+
+public class Person
+{
+    private string name; // Private field
+
+    public string Name
+    {
+        get { return name; } // Property getter
+        set
+        {
+            // Property setter with validation logic
+            if (!string.IsNullOrEmpty(value))
+                name = value;
+        }
+    }
+}
+
+Q1.D/w Variable and Functions
+Ans.Variables:
+
+Storage: Variables are used to store data values in memory. They represent named storage locations where you can store and retrieve 
+values of a specific data type.
+
+Scope: Variables have a scope that defines where they are accessible and usable in your code. Common variable scopes include local 
+(within a method or block), instance (within a class or object instance), and static (shared across instances of a class).
+
+Data Types: Variables have data types that specify the kind of data they can store. Data types can be simple (e.g., int, double) 
+or complex (e.g., classes, structs).
+
+Usage: Variables are typically used for storing and manipulating data within your program. They are essential for working with values 
+and performing calculations.
+
+Declaration: Variables need to be declared before use, specifying their data type and optionally providing an initial value.
+
+Access: Variables can be accessed directly in the scope where they are defined. You can read and modify their values using assignment operators.
+
+
+Functions (Methods):
+
+Execution: Functions (also known as methods in C#) are blocks of code that perform a specific task or action when called. 
+They encapsulate a series of statements and can take parameters as input and return values as output.
+
+Scope: Functions also have scope, but they encapsulate a specific set of operations rather than storing data values.
+They are typically defined within classes or stand-alone.
+
+Parameters: Functions can accept parameters, which are values passed to the function when it is called.
+These parameters are used within the function's body to perform operations.
+
+Return Values: Functions can return values, which are results computed by the function. The return type specifies the 
+type of value the function returns.
+
+Usage: Functions are used for encapsulating logic and functionality.
+They allow you to break down your code into smaller, reusable, and manageable pieces.
+
+Declaration: Functions must be declared with a return type, a name, and, optionally, a list of parameters.
+They can then be called or invoked elsewhere in the code.

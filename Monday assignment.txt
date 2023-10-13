@@ -1,0 +1,57 @@
+
+1.How many arguments will be passed in Main method
+Ans.In C#, the Main method can accept an array of strings as its argument, 
+which represents command-line arguments passed to your program when it is executed. 
+The number of elements in this array corresponds to the number of command-line arguments provided.
+
+Here's the standard signature of the Main method:
+static void Main(string[] args)
+{
+    // Your code here
+}
+In this method signature:
+
+static: It indicates that the method is a static method and can be called without creating an 
+instance of the class.
+void: It indicates that the Main method does not return a value.
+Main: This is the name of the method.
+string[] args: This is the parameter that receives the command-line arguments.
+The args parameter is an array of strings where each string represents a command-line argument.
+
+The number of elements in the args array will be equal to the number of command-line arguments 
+passed when you run the program. For example, if you run the program with the 
+command MyProgram.exe arg1 arg2, the args array will have two elements: ["arg1", "arg2"].
+
+You can access these command-line arguments inside the Main method to perform specific tasks or configurations based on the input provided when your program is executed.
+
+
+2. REF AND OUT-
+A ref parameter is used when you want to pass a reference to an existing variable to a method.
+You must initialize the variable before passing it as a ref parameter.
+The method can read and modify the value of the ref parameter.
+The method must assign a value to the ref parameter before it returns.
+
+void ModifyValue(ref int x)
+{
+    x = x * 2;
+}
+
+int value = 5;
+ModifyValue(ref value);
+// The 'value' variable is now 10
+
+out Parameter:
+
+An out parameter is used when you want to pass a reference to a variable, but the method is not required to initialize it before using it. The method is responsible for assigning a value to the out parameter.
+Unlike ref, the variable passed as an out parameter doesn't need to be initialized before being passed to the method.
+The method must assign a value to the out parameter before it returns.
+
+void InitializeAndReturnOutValue(out int y)
+{
+    y = 10;
+}
+
+int result;
+InitializeAndReturnOutValue(out result);
+// The 'result' variable is now 10
+

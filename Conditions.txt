@@ -1,0 +1,6 @@
+Finding a word in a sentence.
+Finding a word in a sentence by ignoring the space at the beginning and at the end of Sentence.
+Finding a word in a sentence by ignoring the space at the beginning and at the end of Sentence and word both.
+Finding a word in a Sentnce by ignoring the Space anywhere in the Sentence.
+Finding a Group of Words in a Sentence.
+Finding a Group of words or word in Sentence by ignoring the Small and Upper Case.
